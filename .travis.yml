@@ -9,6 +9,21 @@ before_install:
 #script:
 #  - docker run vmorcillo/first-step
 
+deploy:
+  provider: elasticbeanstalk
+  region: "eu-central-1"
+  app: "docker-hello"
+  env: "DockerHello-env"
+  bucket_name: "elasticbeanstalk-eu-central-1-377969743169"
+  bucket_path: "docker-hello"
+  on:
+    branch: master
+  access_key_id:
+    secure: $AWS_ACCESS_KEY
+  secret_access_key:
+    secure: $AWS_SECRET_KEY
+
+
 
 
 
