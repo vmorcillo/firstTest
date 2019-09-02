@@ -1,0 +1,29 @@
+<AutoConfig>
+   <PuppetMaster name='puppet' ip='172.30.113.250' netmask='255.255.252.0' networkInterface='eth0'/>
+   <PacketRepository ip ='172.30.113.250'/>
+   <NtpServer1 ip ='172.30.100.1'/>
+   <Installserver1 ip ='172.30.112.245' alias='prodiis001'/>
+   <defaultGateway ip='172.30.115.254'/>
+   <RepoRhel63Server url ='repo/RHEL_63_SERVER'/>
+   <RepoRhel64Workstation url = '%URL_REPO_RHEL_WORKSTATION_64%'/>
+   <RepoRhel67Server url ='repo/RHEL_67_SERVER'/>
+   <RepoRhel68Server url ='repo/RHEL_68_SERVER'/>
+   <RepoRhel68Workstation url = 'repo/RHEL_68_WS'/>
+   <RepoRhel69Server url ='repo/RHEL_69_SERVER'/>
+   <RepoRhel69Workstation url = 'repo/RHEL_69_WS'/>
+   <RepoRhel72Server url ='repo/RHEL_72_SERVER'/>
+   <RepoRhel72Workstation url = 'repo/RHEL_72_WS'/>
+   <RepoRhel74Server url ='repo/RHEL_74_SERVER'/>
+   <RepoRhel74Workstation url = 'repo/RHEL_74_WS'/>
+   <RepoExtraPuppet64 url ='repo/PUPPET_EXTRA_PACKAGES'/>
+   <RepoPuppetlabs url ='repo/puppetlabs-pc1_el6'/>
+   <MachineKeyboard type='es'/>
+   <iloNet ip ='192.168.0.200' netmask='255.255.252.0'/>
+   <iloAuth user='root">' passwd='Kalamardo'/>
+   <immNet ip='172.30.236.0' netmask='255.255.252.0'/>
+   <immAuth user='USERID' passwd='PASSW0RD'/>
+   <idracNet ip='%IDRAC_NET_ADDRESS%' netmask='%IDRAC_NET_NETMASK%'/>
+   <idracAuth user='%IDRAC_USER%' passwd='%IDRAC_PASSWD%'/>
+   <client name='FACTORY'/>
+</AutoConfig>
+
